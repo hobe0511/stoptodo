@@ -1,0 +1,13 @@
+<h1>Todo list</h1>
+
+<%= form_for @todo, :url => { :controller => 'todos', :action => 'create' } do |f| %>
+    <%= f.label :title, "new Todo" %>
+    <%= f.text_field :title %>
+    <%= f.submit "Create" %>
+
+<% end %>
+
+<ul>
+	<% @todos.each do |todo| %>
+	<%end%>
+</ul>
